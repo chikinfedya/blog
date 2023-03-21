@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box; /* box-sizing: border-box - размер-коробки: граница-коробки */
+}
+
+body {
+margin: 0;/* body - тело */
+}
+
+/* HEADER */
+header {
+     width: 555px;  /*ширина 555 пикс*/
+     margin-left: auto; /* поле с лева*/
+     margin-right: auto; /* поле с права*/
+     margin-top: 71px; /* поле с верху*/
+     margin-bottom: 92px; /* поле с с низу*/
+     
+}
+
+.menu {
+     margin: 0%; /* поле 0*/
+     padding-left: 0; /* набивка с лева 0*/
+     list-style: none; /*стиль списка: нету (убираем точьки у списка)*/ 
+     color: #7D7D7D;/* цвет копируем с сайта у которого слизуем  цвет*/ 
+}
+
+.menu li{
+    display: inline; /* дисплей встроеный - команда выстраевает в одну линию*/
+    font-size: 14px; /* Размер шрифта*/ 
+    line-height: 19px;/*высота линии*/ 
+    }
+
+ .menu li:not(:last-child) /* нет(последний ребенок)*/{
+ margin-right: 90px;} /* Поле с права*/ 
+
+ .menu li:first-child {
+  color: #03A9F4;
+ }
+
+ .menu a {
+    text-decoration: none; /*Текстовая дикорация:  нету*/ 
+    color: inherit; /* даем наследственость цвета меню (даной командой мы даем цает потомку "а" от родителя ".menu")*/
+ }
+
+  .menu li:hover { /*hover текст li*/
+    color: #03A9F4;
+ }
+
+ /* MAIN */
+
+ main {
+    width: 906px;
+    margin: 0 auto;
+    text-align: justify;
+ }
+ 
+ article {
+    display: inline-block;
+    width: 48%;
+ }
+ 
+ article:nth-child(4) {
+   margin-left: 3.5%;
+}
+
+ article img {
+   width: 100%;
+ }
+
+ article a {
+   display: block;
+   margin-top: 62px;
+   margin-bottom: 32px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #B4AD9E;
+ }
+ 
+ article h2 {
+   font-size: 30px;
+   line-height: 40px;
+   color: #626262;
+   margin-top: 0;
+   margin-bottom: 40px;
+ }
+
+ article p {
+   font-size: 14px;
+   line-height: 19px;
+   color: #626262;
+ }
+
+ button {
+   width: 165px;
+   height: 60px;
+   left: 0px;
+   top: 0px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   margin: 62px 42% 47px;
+   
+   background-color: white;
+   border: 1px solid #626262;
+   }
+
+ /* button 
+position: absolute;
+width: 165px;
+height: 60px;
+left: 506px;
+top: 1436px; */
+
+
+
+/* Load more 
+position: absolute;
+width: 68px;
+height: 19px;
+left: 49px;
+top: 20px;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+identical to box height */
+
